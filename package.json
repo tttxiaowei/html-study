@@ -1,0 +1,22 @@
+{
+  "name": "html-study",
+  "version": "1.0.0",
+  "description": "html-study",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tttxiaowei/html-study.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tttxiaowei/html-study/issues"
+  },
+  "homepage": "https://github.com/tttxiaowei/html-study#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
