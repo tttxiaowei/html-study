@@ -1,23 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>&lt;title&gt; 元素</title>
+  </head>
+  <body>
+    <h1>&lt;h1&gt; 元素</h1>
+    <p>
+      红喉北蜂鸟（学名：<i>Archilocus colubris</i>）
+      是北美东部最常见的蜂鸟品种。
+    </p>
+    
+    <!-- 舶来词 -->
+    <p>
+      菜单上有好多舶来词汇，比如 <i lang="uk-latn">vatrushka</i>（东欧乳酪面包）,
+      <i lang="id">nasi goreng</i>（印尼炒饭）以及<i lang="fr">soupe à l'oignon</i>（法式洋葱汤）。
+    </p>
+    
+    <!-- 已知的错误书写 -->
+    <p>
+      总有一天我会改掉写<u style="text-decoration-line: underline; text-decoration-style: wavy;">措字</u>的毛病。
+    </p>
+    
+    <!-- 在一组指令中突出显示关键字 -->
+    <ol>
+      <li>
+        <b>切</b>下两片面包，
+      </li>
+      <li>
+        在两片面包中间<b>夹入</b>一片西红柿和一片生菜叶。
+      </li>
+    </ol>
+    <p>我创建了一个指向
+      <a href="https://www.mozilla.org/zh-CN/"
+         title="了解 Mozilla 使命以及如何参与贡献的最佳站点。">Mozilla 主页</a>
+      的超链接。
+      </p>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+      <a href="mailto:nowhere@mozilla.org">向 nowhere 发邮件</a>
+      <a href="mailto:nowhere@mozilla.org?cc=name2@rapidtables.com&bcc=name3@rapidtables.com&subject=The%20subject%20of%20the%20email&body=The%20body%20of%20the%20email">
+        Send mail with cc, bcc, subject and body
+      </a>
+      <dl>
+        <dt>内心独白</dt>
+          <dd>戏剧中，某个角色对自己的内心活动或感受进行念白表演，这些台词只面向观众，而其他角色不会听到。戏剧中，某个角色对自己的内心活动或感受进行念白表演，这些台词只面向观众，而其他角色不会听到戏剧中，某个角色对自己的内心活动或感受进行念白表演，这些台词只面向观众，而其他角色不会听到戏剧中，某个角色对自己的内心活动或感受进行念白表演，这些台词只面向观众，而其他角色不会听到戏剧中，某个角色对自己的内心活动或感受进行念白表演，这些台词只面向观众，而其他角色不会听到</dd>
+        <dt>语言独白</dt>
+          <dd>戏剧中，某个角色把自己的想法直接进行念白表演，观众和其他角色都可以听到。</dd>
+        <dt>旁白</dt>
+          <dd>戏剧中，为渲染幽默或戏剧性效果而进行的场景之外的补充注释念白，只面向观众，内容一般都是角色的感受、想法、以及一些背景信息等。</dd>
+      </dl>
 
-<body>
-    <p>Mozilla 是一个全球社区，这里聚集着来自五湖四海的</p>
+      <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+        <p>The <strong>HTML <code>&lt;blockquote&gt;</code> Element</strong> (or <em>HTML Block
+        Quotation Element</em>) indicates that the enclosed text is an extended quotation.</p>
+      </blockquote>
+      <p>The <strong>HTML <code>&lt;blockquote&gt;</code> Element</strong> (or <em>HTML Block
+      Quotation Element</em>) indicates that the enclosed text is an extended quotation.</p>
 
-    <ul>
-        <li>技术人员</li>
-        <li>思考者</li>
-        <li>建造者</li>
-    </ul>
+      <p>According to the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+        <cite>MDN blockquote page</cite></a>:
+        </p>
 
-    <p>我们致力于……</p>
-</body>
+        <p>我们使用 <abbr title="超文本标记语言（Hyper text Markup Language）">HTML</abbr> 来组织网页文档。</p>
 
+<p>第 33 届 <abbr title="夏季奥林匹克运动会">奥运会</abbr> 将于 2024 年 8 月在法国巴黎举行。</p>
+
+
+
+<p>咖啡因的化学方程式是 C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>。</p>
+<p>如果 x<sup>2</sup> 的值为 9，那么 x 的值必为 3 或 -3。</p>
+
+
+<pre><code></code>const para = document.querySelector('p');
+
+  para.onclick = function() {
+    alert('噢，噢，噢，别点我了。');
+  }</code></pre>
+  
+  <p>请不要使用 <code>&lt;font&gt;</code> 、 <code>&lt;center&gt;</code> 等表象元素。</p>
+  
+  <p>在上述的 JavaScript 示例中，<var>para</var> 表示一个段落元素。</p>
+  
+  
+  <p>按 <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>A</kbd> 选择全部内容。</p>
+  
+  <pre>$ <kbd>ping mozilla.org</kbd>
+  <samp>PING mozilla.org (63.245.215.20): 56 data bytes
+  64 bytes from 63.245.215.20: icmp_seq=0 ttl=40 time=158.233 ms</samp></pre>
+  <p>Type the following in the Run dialog: <kbd>cmd</kbd><br />Then click the OK button.</p>
+
+<p>Save the document by pressing <kbd>Ctrl</kbd> + <kbd>S</kbd></p>
+
+
+<time datetime="2016-01-20">2016年1月20日</time>
+
+<hr>
+<h1>HTML 调试示例</h1>
+
+<p>什么使得 HTML 出错？
+
+<ul>
+  <li>未闭合的元素：如果元素<strong>没有正确的结束标记，那么将影响下方整个区域，这不是你期望的。
+
+  <li>错误嵌套元素：正确进行嵌套是一项重要的编码习惯。<strong>重点（strong）<em>重点强调（strongly emphasised）？</strong>这又是什么鬼？</em>
+
+  <li>未闭合的属性：另一种 HTML 常见错误。来看一个示例：<a href="https://www.mozilla.org/>Mozilla 主页链接</a>
+</ul>
+  </body>
 </html>
